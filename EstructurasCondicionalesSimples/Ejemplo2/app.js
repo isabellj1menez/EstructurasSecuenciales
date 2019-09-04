@@ -30,16 +30,16 @@ function compararvalores() {
 
     let imprimir = document.getElementById('Resultado');
     if (Number(numero1.value) == Number(numero2.value)) {
-        imprimir.innerText = 'El numero A y B tinen el mismo valor'
+        imprimir.innerText = 'El numero A y B tinen el mismo valor';
         return;
     }
 
     if (Number(numero1.value) > Number(numero2.value)) {
-        '0987'
-        imprimir.innerText = 'El numero A es el valor mas grande'
+
+        imprimir.innerText = 'El numero A es el valor mas grande';
 
     } else {
-        imprimir.innerText = 'El numero B es el valor mas grande'
+        imprimir.innerText = 'El numero B es el valor mas grande';
     }
 
 }
