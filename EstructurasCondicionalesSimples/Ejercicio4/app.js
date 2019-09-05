@@ -38,12 +38,14 @@ function datos() {
 
         imprimir.innerHTML = 'El nombre del producto es: ' + nombre + '<br/>' + 'La clave del producto es: ' + clave.value + '<br/>' + 'El precio original del producto es: ' + precioO + '<br/>' + 'El precio con el 10% de descuento es: ' + precioDescuento;
 
-    } else {
+    } else if (clave.value == 2) {
 
         precioDescuento = precioO - (precioO * .20);
 
         imprimir.innerHTML = 'El nombre del producto es: ' + nombre + '<br/>' + 'La clave del producto es: ' + clave.value + '<br/>' + 'El precio original del producto es: ' + precioO + '<br/>' + 'El precio con el 20% de descuento es: ' + precioDescuento;
 
+    } else {
+        imprimir.innerHTML = 'la clave no es valida'
     }
 
 }
