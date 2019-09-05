@@ -15,10 +15,13 @@ function Descuentos() {
 
     if (compra > 1000) {
 
-        let Descuento = 0;
+
         let CostoFinal = 0;
-        Descuento = compra * .20;
-        CostoFinal = compra - Descuento;
+        // let Descuento = 0;
+        // Descuento = compra * .20;
+        // CostoFinal = compra - Descuento;
+
+        CostoFinal = compra - (compra * .20);
 
         resultado.innerHTML = CostoFinal;
 
