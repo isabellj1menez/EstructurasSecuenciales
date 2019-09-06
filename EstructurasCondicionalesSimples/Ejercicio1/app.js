@@ -7,7 +7,7 @@ let Edad2 = Number(document.getElementById('edad2').value);
 EventListener();
 
 function EventListener() {
-    btnComparar.addEventListener('click', compararvalores);
+    btnEdades.addEventListener('click', compararvalores);
 }
 
 function compararvalores() {
