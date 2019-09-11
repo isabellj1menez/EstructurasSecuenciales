@@ -15,6 +15,67 @@ function CalcularPromedio() {
 
     let promedio = 0;
 
+    let imprimirResultado = document.getElementById('imprimir');
+
+    if (Calificacion1 < Calificacion2 && Calificacion1 < Calificacion3 && Calificacion1 < Calificacion4) {
+
+        promedio = (Calificacion2 + Calificacion3 + Calificacion4) / 3;
+
+        imprimirResultado.innerHTML = `
+        <h4 class="alert-heading text-center text-info"> la calificacion mas baja es ${Calificacion1}. <br>
+        El promedio es ${promedio}
+        </h4>
+        `
+        return;
+    }
+    if (Calificacion2 < Calificacion1 && Calificacion2 < Calificacion3 && Calificacion2 < Calificacion4) {
+
+        promedio = (Calificacion1 + Calificacion3 + Calificacion4) / 3;
+
+        imprimirResultado.innerHTML = `
+        <h4 class="alert-heading text-center text-info"> la calificacion mas baja es ${Calificacion2}. <br>
+        El promedio es ${promedio}
+        </h4>
+        `
+        return;
+    }
+    if (Calificacion3 < Calificacion2 && Calificacion3 < Calificacion1 && Calificacion3 < Calificacion4) {
+
+        promedio = (Calificacion2 + Calificacion3 + Calificacion4) / 3;
+
+        imprimirResultado.innerHTML = `
+        <h4 class="alert-heading text-center text-info"> la calificacion mas baja es ${Calificacion3}. <br>
+        El promedio es ${promedio}
+        </h4>
+        `
+        return;
+    }
+    if (Calificacion4 < Calificacion2 && Calificacion4 < Calificacion3 && Calificacion4 < Calificacion1) {
+
+        promedio = (Calificacion2 + Calificacion3 + Calificacion4) / 3;
+
+        imprimirResultado.innerHTML = `
+        <h4 class="alert-heading text-center text-info"> la calificacion mas baja es ${Calificacion4}. <br>
+        El promedio es ${promedio}
+        </h4>
+        `
+        return;
+    }
+
+    if (Calificacion1 == Calificacion2 && Calificacion1 == Calificacion3 && Calificacion1 == Calificacion4) {
+
+        promedio = (Calificacion2 + Calificacion3 + Calificacion4 + Calificacion4) / 4;
+
+        imprimirResultado.innerHTML = `
+        <h4 class="alert-heading text-center text-info"> 
+        El promedio es ${promedio}
+        </h4>
+        `
+        return;
+    }
+
+
+
 
 
 
