@@ -73,10 +73,3 @@ function CalcularPromedio() {
         `
         return;
     }
-
-
-
-
-
-
-}
