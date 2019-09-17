@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <p>El empleado de la tienda “Tiki Taka” realiza N ventas durante el día, se requiere saber cuántas de ellas fueron mayores a $1000, cuantas fueron mayores a $500 pero menores o iguales a $1000, y cuantas fueron menores o iguales $500. Además,
+                se requiere saber el monto de lo vendido en cada categoría y de forma global.</p>
+            <hr>
+            <div class="row">
+                <div class="col-12">
+                    <div class="form-group">
+                        <label for="">Venta</label>
+                        <input type="text" name="" id="Ventas" class="form-control" placeholder="Ingrese el monto de la venta" aria-describedby="helpId">
+                    </div>
+                </div>
+                <div class="col-12">
+                    <button type="button" name="" id="BtnVentas" class="btn btn-primary btn-lg btn-block">Ingresar venta</button>
+                </div>
+                <div class="col-12 mt-3">
+                    <div class="alert alert-primary" role="alert">
+                        <strong id="resultado"></strong>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <p>Ventas mayores a $1000</p>
+                </div>
+                <div class="col-4">
+                    <p>Ventas mayores a $500 y menores a $1000</p>
+                </div>
+                <div class="col-4">
+                    <p>Ventas menores a $500</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <div id="VentasMayores">
+                        <ul class="list-group" id="ListaNumerica1">
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div id="VentasIguales">
+                        <ul class="list-group" id="ListaNumerica2">
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div id="VentasMenores">
+                        <ul class="list-group" id="ListaNumerica3">
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <script src="./app.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+
+</html>
