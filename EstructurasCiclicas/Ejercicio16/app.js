@@ -9,7 +9,7 @@ function CalcularAhorro() {
     let ahorro = 1;
     let ahorroTotal = 0;
 
-    for (let i = 0; i <= 10; i++) {
+    for (let i = 0; i <= 30; i++) {
 
         contador++;
         ahorro = ahorro * 3;

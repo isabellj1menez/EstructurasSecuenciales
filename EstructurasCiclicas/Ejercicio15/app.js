@@ -8,8 +8,8 @@ function CalcularSueldo() {
 
 
     for (let i = 0; i <= 5; i++) {
-        Sueldo = Math.round(Sueldo + (Sueldo * .10));
-
+        Sueldo = Sueldo + (Sueldo * .10);
+        Sueldo = Math.round(Sueldo * 100) / 100;
         resultado = `${resultado} ${Sueldo},`
 
     }

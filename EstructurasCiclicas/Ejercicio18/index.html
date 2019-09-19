@@ -12,24 +12,28 @@
 </head>
 
 <body>
+
     <div class="container">
         <div class="jumbotron">
-            <p>La conjetura de ULAM consiste en lo siguiente:
-                <br> a. Inicia a partir de cualquier número positivo entero.
-                <br> b. Si el número es par, se divide entre 2; si es impar, se multiplica por 3 y se agrega uno. De manera que podemos obtener lo siguiente: 26, 13, 40, 20, 10, 5, 16, 8, 4, 2, 1. Dado un numero positivo, ejecute la serie ULAM.
-            </p>
+            <p>Elabore un programa que pida al usuario 30 números enteros para que al final presente la suma de los números impares y el promedio de los números pares.</p>
             <hr>
+
             <div class="row">
+
                 <div class="col-12">
                     <div class="form-group">
                         <label for=""></label>
-                        <input type="number" name="" id="InputNumero" class="form-control" placeholder="" aria-describedby="helpId">
+                        <input type="number" name="" id="Numeros" class="form-control" placeholder="Ingresa numeros enteros" aria-describedby="helpId">
                     </div>
                 </div>
+
             </div>
             <div class="row">
-                <div class="col-12">
-                    <button type="button" name="" id="BtnULAM" class="btn btn-primary btn-lg btn-block">Conjetura ULAM</button>
+                <div class="col-6">
+                    <button type="button" name="" id="BtnCalcular" class="btn btn-primary btn-lg btn-block">Calcular numeros  inpares y pares </button>
+                </div>
+                <div class="col-6">
+                    <button type="button" name="" id="BtnAgregarNumeros" class="btn btn-primary btn-lg btn-block">Agregar un nuevo numero </button>
                 </div>
             </div>
             <div class="row mt-3">
@@ -39,17 +43,15 @@
                     </div>
                 </div>
             </div>
+
         </div>
     </div>
     <!-- Optional JavaScript -->
     <script src="./app.js"></script>
-
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
-
 </body>
 
 </html>
