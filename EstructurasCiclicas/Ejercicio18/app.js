@@ -1,43 +1,44 @@
-let BtnAgregarNumeros = document.getElementById('BtnAgregarNumeros');
-let BtnCalcular = document.getElementById('BtnCalcular');
-let Numeros = document.getElementById('Numeros');
-let imprimirresultado = document.getElementById('resultado');
+ let BtnAgregarNumeros = document.getElementById('BtnAgregarNumeros');
+ let imprimirresultado = document.getElementById('resultado');
+ let SumaPares = 0;;
+ let Sumaimpares = 0;
+ let contador = 0;
+ let promedio = 0;
 
-EventListener();
+ EventListener();
 
-function EventListener() {
-    BtnAgregarNumeros.addEventListener('click', AgregarNumeros);
-}
+ function EventListener() {
+     BtnAgregarNumeros.addEventListener('click', AgregarNumeros);
+     //  BtnCalcular.addEventListener('click',SumarValores);
+ }
 
-function AgregarNumeros() {
+ function AgregarNumeros() {
 
-    if (Number(Numeros.value) % 1 == 0 && Number(Numeros.value) > 0) {
+     for (let i = 0; i < 30; i++) {
 
-        CalcularNumeros();
+         let num = prompt(`Numero ${i+1}`);
 
-    } else {
-        imprimirresultado.innerText = "ingresa un numero positivo entero";
-    }
+         console.log(num)
 
-}
-let SumaNumeros = 0;
-let Sumainpares = 0;
+         if (Number(num) % 1 == 0 && Number(num) > 0) {
 
-function CalcularNumeros() {
+             if (Number(num) % 2 != 0) {
 
-    for (let i = 0; i <= 3; i++) {
+                 Sumaimpares += Number(num);
+             } else {
+                 contador++
+                 SumaPares += Number(num);
+             }
 
-        let num = prompt(`Numero ${i+1}`);
-        console.log(num);
+         } else {
+             imprimirresultado.innerText = "ingresa un numero positivo entero";
+             return;
+         }
 
-        if (Number(num) % 2 != 0) {
-            Sumainpares = Sumainpares + Number(num);
-            console.log(Sumainpares)
-        }
 
-    }
+     }
+     promedio = SumaPares / contador;
 
-    SumaNumeros += Number(Numeros.value);
-    console.log(SumaNumeros)
+     imprimirresultado.innerHTML = `La suma de los numerosinpares es: ${Sumaimpares} <br> El promedio de los numeros pares es: ${promedio}`
 
-}
+ }
