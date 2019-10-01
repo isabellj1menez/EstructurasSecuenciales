@@ -11,12 +11,13 @@ function CalcularTarifa() {
     let horas = Number(document.getElementById('Horas').value);
     let costotarifa = 0;
 
-    console.log(horas)
+    let imprimirResultado = document.getElementById('Resultado');
+
+
 
     if (horas <= 2) {
         costotarifa = horas * 5;
         console.log(costotarifa);
-
     }
     if (horas < 6 && horas >= 3) {
         costotarifa = (horas * 4) + 2;
@@ -32,6 +33,7 @@ function CalcularTarifa() {
         console.log(costotarifa);
     }
 
+    imprimirResultado.innerText = costotarifa
 
 
 

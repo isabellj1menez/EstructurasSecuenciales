@@ -1,4 +1,5 @@
  let Btnarreglo = document.getElementById('Btnarreglo');
+ let imprimir = document.getElementById('ImprimirLista')
 
 
 
@@ -31,6 +32,7 @@
      }
      document.getElementById('Suma').innerHTML = `La suma de todos los numeros es: ${Suma}`;
      imprimir.innerHTML = Datosimprimir
+
 
 
 

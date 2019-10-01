@@ -21,6 +21,7 @@ function CalcularPromedio() {
 
         promedio = (Calificacion2 + Calificacion3 + Calificacion4) / 3;
 
+        console.log(promedio)
         imprimirResultado.innerHTML = `
         <h4 class="alert-heading text-center text-info"> la calificacion mas baja es ${Calificacion1}. <br>
         El promedio es ${promedio}
@@ -73,3 +74,4 @@ function CalcularPromedio() {
         `
         return;
     }
+}

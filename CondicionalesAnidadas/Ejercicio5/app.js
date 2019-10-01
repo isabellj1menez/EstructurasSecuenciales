@@ -51,7 +51,7 @@ function Descendente() {
 
     if (DatoA == DatoB && DatoA == DatoC) {
         imprimirResultado.innerHTML = `
-      <h4 class="alert-heading text-center text-info"> -Todos los numeros son iguales
+      <h4 class="alert-heading text-center text-info"> Todos los numeros son iguales
       `
     }
 }

@@ -16,7 +16,7 @@ function VerificarCapicua() {
     let UMillar = 0;
 
 
-    if (Numero < 9999 && Numero > 0) {
+    if (Numero < 9999 && Numero > 1000) {
         Unidad = Math.floor(Numero % 10);
         Decena = Math.floor((Numero % 100) / 10);
         Centena = Math.floor((Numero % 1000) / 100);
@@ -33,22 +33,42 @@ function VerificarCapicua() {
     }
 
 
-    //   if (Numero < 1000 && Numero > 99) {
+    if (Numero < 1000 && Numero > 99) {
 
-    //     Unidades = Math.floor(Numero % 10);
-    //     Centena = Math.floor(Numero / 100);
-    //     console.log(Unidades);
-    //     console.log(Centena);
+        Unidades = Math.floor(Numero % 10);
+        Centena = Math.floor(Numero / 100);
+        console.log(Unidades);
+        console.log(Centena);
 
 
-    //     if (Unidades == Centena) {
-    //         Imprimir.innerText = "El número es capicua";
-    //     } else {
-    //         Imprimir.innerText = "El número no es capicua";
-    //     }
+        if (Unidades == Centena) {
+            Imprimir.innerText = "El número es capicua";
+        } else {
+            Imprimir.innerText = "El número no es capicua";
+        }
 
-    // } else {
-    //     Imprimir.innerText = "El número no es capicua";
+    } else {
+        Imprimir.innerText = "El número no es capicua";
 
-    // }
+    }
+
+
+    if (Numero < 100 && Numero > 0) {
+
+        Unidades = Math.floor(Numero % 10);
+        Decena = Math.floor((Numero % 100) / 10);
+        console.log(Unidades);
+        console.log(Centena);
+
+
+        if (Unidades == Decena) {
+            Imprimir.innerText = "El número es capicua";
+        } else {
+            Imprimir.innerText = "El número no es capicua";
+        }
+
+    } else {
+        Imprimir.innerText = "El número no es capicua";
+
+    }
 }

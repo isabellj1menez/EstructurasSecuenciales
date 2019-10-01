@@ -12,34 +12,53 @@
 </head>
 
 <body>
+
     <div class="container">
         <div class="jumbotron">
-            <p>
-                El dueño de un estacionamiento requiere un diagrama de flujo con el algoritmo que le permita determinar cuánto debe cobrar por el uso del estacionamiento a sus clientes. Las tarifas que se tienen son las siguientes: Las dos primeras horas a $5.00 c/u.Las
-                siguientes tres a $4.00 c/u. Las cinco siguientes a $3.00 c/u. Después de diez horas el costo por cada una es de $2.00.
-            </p>
+
             <div class="row">
-                <div class="col-12">
+                <div class="col-6">
                     <div class="form-group">
-                        <label for="">Horas</label>
-                        <input type="text" name="" id="Horas" class="form-control" placeholder="" aria-describedby="helpId">
+                        <label for="">Tamaño Array</label>
+                        <input type="text" name="" id="tamañoArray" class="form-control" placeholder="Ingrese el tamaño del array" aria-describedby="helpId">
+                    </div>
+                </div>
+
+                <div class="col-6">
+                    <div class="form-group">
+                        <label for="">Multiplo</label>
+                        <input type="text" name="" id="funcionArray" class="form-control" placeholder="Ingrese el incremeto" aria-describedby="helpId">
                     </div>
                 </div>
             </div>
+
             <div class="row">
-                <div class="col-12">
-                    <button type="button" name="" id="btnCalcular" class="btn btn-primary btn-lg btn-block">Calcular tarifa</button>
+                <div class="col-12 mt-4">
+                    <button type="button" name="" id="btnCalcular" class="btn btn-outline-info btn-lg btn-block">Rellenar</button>
                 </div>
             </div>
-            <div class="row mt-3">
-                <div class="col-12">
-                    <div class="alert alert-success" id="Resultado" role="alert">
-                    </div>
+
+            <div class="row">
+                <div class="col-12 mt-4">
+                    <ul class="list-group" id="listafuncion"></ul>
                 </div>
             </div>
 
         </div>
     </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     <!-- Optional JavaScript -->
     <script src="./app.js"></script>

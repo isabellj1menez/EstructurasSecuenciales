@@ -12,6 +12,8 @@ function CalcularCosto() {
     let Personas = Number(document.getElementById('Personas').value);
     let Autobus = document.getElementById('Autobus').value;
 
+    let imprimirResultado = document.getElementById('Resultado');
+
     let CostoPersona = 0;
     let CostoTotal = 0;
 
