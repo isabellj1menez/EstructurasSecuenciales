@@ -42,7 +42,7 @@ function CalcularPromedio() {
     }
     if (Calificacion3 < Calificacion2 && Calificacion3 < Calificacion1 && Calificacion3 < Calificacion4) {
 
-        promedio = (Calificacion2 + Calificacion3 + Calificacion4) / 3;
+        promedio = (Calificacion2 + Calificacion1 + Calificacion4) / 3;
 
         imprimirResultado.innerHTML = `
         <h4 class="alert-heading text-center text-info"> la calificacion mas baja es ${Calificacion3}. <br>
@@ -53,7 +53,7 @@ function CalcularPromedio() {
     }
     if (Calificacion4 < Calificacion2 && Calificacion4 < Calificacion3 && Calificacion4 < Calificacion1) {
 
-        promedio = (Calificacion2 + Calificacion3 + Calificacion4) / 3;
+        promedio = (Calificacion2 + Calificacion3 + Calificacion1) / 3;
 
         imprimirResultado.innerHTML = `
         <h4 class="alert-heading text-center text-info"> la calificacion mas baja es ${Calificacion4}. <br>
@@ -65,7 +65,7 @@ function CalcularPromedio() {
 
     if (Calificacion1 == Calificacion2 && Calificacion1 == Calificacion3 && Calificacion1 == Calificacion4) {
 
-        promedio = (Calificacion2 + Calificacion3 + Calificacion4 + Calificacion4) / 4;
+        promedio = (Calificacion2 + Calificacion3 + Calificacion4) / 3;
 
         imprimirResultado.innerHTML = `
         <h4 class="alert-heading text-center text-info"> 

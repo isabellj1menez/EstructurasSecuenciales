@@ -62,7 +62,7 @@ function CalcularCosto() {
             return;
         }
         if (Autobus == 'B') {
-            CostoTotal = Kilometros * 2;
+            CostoTotal = Personas * (Kilometros * 2);
             CostoPersona = Kilometros * 2;
             console.log(CostoTotal);
             imprimirResultado.innerHTML = `
@@ -71,7 +71,7 @@ function CalcularCosto() {
             return;
         }
         if (Autobus == 'C') {
-            CostoTotal = Kilometros * 2.5;
+            CostoTotal = Personas * (Kilometros * 2.5);
             CostoPersona = Kilometros * 2.5;
             console.log(CostoTotal);
             imprimirResultado.innerHTML = `
@@ -80,7 +80,7 @@ function CalcularCosto() {
             return;
         }
         if (Autobus == 'D') {
-            CostoTotal = Kilometros * 3;
+            CostoTotal = Personas * (Kilometros * 3);
             CostoPersona = Kilometros * 3;
             console.log(CostoTotal);
             imprimirResultado.innerHTML = `

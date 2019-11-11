@@ -32,7 +32,7 @@ function VentasTotal() {
             NumeroVentas1++;
             console.log(NumeroVentas1);
             console.log(TotalVentas1);
-        } else if (Ventas < 500) {
+        } else if (Ventas <= 500) {
 
             let newli = document.createElement('li');
             newli.setAttribute('id', `listaN${contador}`);

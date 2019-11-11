@@ -1,11 +1,23 @@
 let BtnCalcular = document.getElementById('BtnCalcular');
+let inputSueldo = document.getElementById('Sueldo');
+let inputNumHoras = document.getElementById('NumHoras');
+let imprimir = document.getElementById('Resultado');
 
 let contador = 0;
 
 EventListener();
 
 function EventListener() {
-    BtnCalcular.addEventListener('click', AgregarHoras);
+    BtnCalcular.addEventListener('click', Validardatos);
+}
+
+function Validardatos() {
+    if (inputSueldo.value == '' || inputNumHoras.value > 23) {
+        imprimir.innerHTML = `Llena todos los campos correctamente`;
+    } else {
+        AgregarHoras()
+    }
+
 }
 
 function AgregarHoras() {
@@ -24,7 +36,6 @@ function AgregarHoras() {
         let imprimirSpan = document.getElementById(`Dia${contador}`);
         imprimirSpan.appendChild(spanHoras);
 
-
     }
     CalcularSueldo();
 
@@ -35,8 +46,6 @@ function CalcularSueldo() {
     SueldoTotal = 0;
     SumaHoras = 0;
 
-    let sueldo = Number(document.getElementById('Sueldo').value);
-    let imprimir = document.getElementById('Resultado');
     for (let i = 1; i <= contador; i++) {
 
         let horas = document.getElementById(`NumHoras${i}`).textContent;
@@ -45,9 +54,8 @@ function CalcularSueldo() {
 
     }
 
-    SueldoTotal = sueldo * SumaHoras;
+    SueldoTotal = inputSueldo.value * SumaHoras;
     imprimir.innerHTML = `Las horas trabajadas son:  ${SumaHoras} <br> y el sueldo es:  $${SueldoTotal}`
-
 
 
 }
